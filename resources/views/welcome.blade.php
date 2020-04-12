@@ -20,7 +20,7 @@
 										padding:4px 10px;
 										border-radius:15px;
 								">{{$post->category->name}}</span>
-									<div class="meta mb-1"><span class="date">{{$post->published_at->format(' M d')}}</span><span class="time">5 min read</span><span class="comment"><a href="#">8 comments</a></span></div>
+									<div class="meta mb-1"><span class="date">{{$post->published_at->format(' M d')}}</span><span class="time">{{$post->$tags}}</span><span class="comment"><a href="#">8 comments</a></span></div>
 									<div class="intro">{{$post->description}}</div>
 									<a class="more-link" href="blog-post.html">Read more &rarr;</a>
 								</div><!--//media-body-->

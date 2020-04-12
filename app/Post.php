@@ -9,8 +9,12 @@ class Post extends Model
     //
     protected $dates = ['published_at'];
 
-    public function category($value=''){
+    public function category(){
         
         return $this->belongsTo(category::class);
+    }
+    public funtion tag(){
+
+        return $this->belongsToMany(Tag::class);
     }
 }
