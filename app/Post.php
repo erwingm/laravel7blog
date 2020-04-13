@@ -13,7 +13,7 @@ class Post extends Model
         
         return $this->belongsTo(category::class);
     }
-    public funtion tag(){
+    public function tags(){
 
         return $this->belongsToMany(Tag::class);
     }

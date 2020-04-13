@@ -20,7 +20,7 @@
 										padding:4px 10px;
 										border-radius:15px;
 								">{{$post->category->name}}</span>
-									<div class="meta mb-1"><span class="date">{{$post->published_at->format(' M d')}}</span><span class="time">{{$post->$tags}}</span><span class="comment"><a href="#">8 comments</a></span></div>
+									<div class="meta mb-1"><span class="date">{{$post->published_at->format(' M d')}}</span>@foreach($post->tags as $tag)<span class="time">{{$tag->name}}</span>@endforeach<span class="comment"><a href="#">8 comments</a></span></div>
 									<div class="intro">{{$post->description}}</div>
 									<a class="more-link" href="blog-post.html">Read more &rarr;</a>
 								</div><!--//media-body-->
